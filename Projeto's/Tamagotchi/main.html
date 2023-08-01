@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>TAMAGOTCHI</h1>
+            <h3>@Insigt</h3>
+        </div>
+    </header>
+
+    <main>
+        <section >            
+            <div id="idDIV_ContainerTamag">
+                <div id="idDIV_Img" class="classRADIUS_Circle centerHorizontal">
+                    <img id="imgTamag" src="" alt="">
+                </div>
+            <section id="idSEC_tamgInfo">
+                    <div id="divCenterVertical">
+                        <p><span id="name">Pingo</span></p>
+                        <div id="idDIV_tamagEnerg" class="centerHorizontal"></div>
+                        <table class="tableInfo">
+                            <tr>
+                                <td><p>Fase: <span id="phase">Ovo</span></p></td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 14px; color: rgb(170, 170, 170);"><p>XP: <span id="experience">0</span></p></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div>
+                        <div id="tableInfos" class="classDIV_ContInfo">
+                            <table class="tableInfo">
+                                <tr>
+                                    <td><p><span id="hunger">100</span></p></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 14px; color: rgb(170, 170, 170);">Hunger</td>
+                                </tr>
+                            </table>
+                            <div class="separatorSection_Vertical"></div>
+                            <table class="tableInfo">
+                                <tr>
+                                    <td><p><span id="energy">100</span></p></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 14px; color: rgb(170, 170, 170);">Energy</td>
+                                </tr>
+                            </table>
+                            <div class="separatorSection_Vertical"></div>
+                            <table class="tableInfo">                            
+                                <tr>
+                                    <td><p><span id="happiness">100</span></p></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 14px; color: rgb(170, 170, 170);">Happiness</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="separatorSection_Horizontal"></div>
+                        <div id="tableInfos">
+                            <p>Tipo: Entidade.<br>Origem: Calabouços do Tibia. Estas movem-se por fluir ao invés de andar. <br>Tática: Rodeia o inimigo se dividindo e flutuando ao seu redor.<br>Info: Possui um pesado ataque, borém baixa defesa.</p>
+                            
+                        </div>
+                    </div>
+                    <div class="separatorSection_Horizontal"></div>
+                    <div class="classDIV_ContInfo" style="display: flex;">
+                        <table class="tableInfo">
+                            <tr>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 14px; color: rgb(170, 170, 170);">Attack</td>
+                            </tr>
+                        </table>
+                        <div class="separatorSection_Vertical"></div>
+                        <table class="tableInfo">                            
+                            <tr>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 14px; color: rgb(170, 170, 170);">Defence</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <!--<div class="separatorSection_Horizontal"></div>
+                    <div class="classDIV_ContInfo" style="display: flex;">
+                        <div style="margin: auto;">
+                            <h3 style="text-align: center; margin-bottom: 5px;">Ações:</h3>
+                            <button onclick="attack()">Atacar</button>
+                            <button onclick="defend()">Defender</button>
+                        </div>
+                        <p id="message" style="text-align: center; margin-bottom: 5px;"></p>
+                    </div>-->
+                    <!--<div>
+                        <h3>Ações:</h3>
+                        <button onclick="attack()">Atacar</button>
+                        <button onclick="defend()">Defender</button>
+                    </div>-->
+                    <div>
+                        <h3>Habilidades:</h3>
+                        <button onclick="useHeal()">Curar</button>
+                        <button onclick="useSpecialAttack()">Ataque Especial</button>
+                        <button onclick="summonFriend()">Invocar Amigo</button>
+                    </div>
+                    <p id="idHability"></p>
+
+                    <div class="separatorSection_Horizontal"></div>
+                    <div class="classDIV_ContInfo" style="display: flex;">
+                        <div style="margin: auto;">
+                            <h3 style="text-align: center; margin-bottom: 5px;">Escolha o alimento:</h3>
+                            <button onclick="btnAlimentar(10)">Maçã (+10)</button>
+                            <button onclick="btnAlimentar(20)">Biscoito (+20)</button>
+                            <button onclick="btnAlimentar(30)">Cenoura (+30)</button>
+                        </div>
+                        <button onclick="play()">XP</button>
+                    </div>
+                    
+                    <section>
+                        <div class="classDIV_ContInfo">
+                            
+                        </div>
+                        <div class="classDIV_ContInfo" style="display: flex;">
+                            <div style="margin: auto;">
+                                <!--<button onclick="btnAlimentar()">Alimentar</button>-->
+                                <button onclick="btnDormir()">Dormir</button>
+                                <button onclick="btnBrincar()">Brincar</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+<script src="main.js"></script>
+</html>
